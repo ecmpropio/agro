@@ -5,6 +5,8 @@ import Hero from '@/components/Hero';
 import StatCard from '@/components/StatCard';
 import AboutSection from '@/components/AboutSection';
 import ProductCard from '@/components/ProductCard';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import PartnerLogos from '@/components/PartnerLogos';
 import { Beef, Fish, Grape, Wheat } from 'lucide-react';
 
 const Index = () => {
@@ -25,11 +27,11 @@ const Index = () => {
       <section id="content" className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-food p-8 rounded-lg text-white">
+            <div className="bg-food p-8 rounded-lg text-white shadow-md hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-2xl font-bold mb-3">Trayectoria y experiencia</h3>
               <p>Desde 2009 proveyendo y exportando alimentos de primera calidad.</p>
             </div>
-            <div className="bg-navy-dark p-8 rounded-lg text-white">
+            <div className="bg-navy-dark p-8 rounded-lg text-white shadow-md hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-2xl font-bold mb-3">Agente de compras</h3>
               <p>Ofrecemos red de contactos de proveedores de la región de manera directa.</p>
             </div>
@@ -43,7 +45,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4">
             <StatCard number="15+" text="AÑOS DE EXPERIENCIA" delay={0} />
             <StatCard number="40+" text="PRODUCTOS CERTIFICADOS" delay={100} />
-            <StatCard number="5.000+" text="TRANSACCIONES EXITOSAS" delay={200} />
+            <StatCard number="5000+" text="TRANSACCIONES EXITOSAS" delay={200} />
             <StatCard number="10+" text="PAÍSES EXPORTADOS" delay={300} />
           </div>
         </div>
@@ -58,6 +60,9 @@ const Index = () => {
           image="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&q=80"
         />
       </section>
+
+      {/* Partner Logos */}
+      <PartnerLogos />
 
       {/* Products Section */}
       <section className="bg-gray-50 section-padding">
@@ -99,6 +104,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* CTA Section */}
       <section className="bg-food py-20">
