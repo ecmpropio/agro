@@ -110,16 +110,30 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="bg-food py-20">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Somos su socio estratégico en la región
-          </h2>
-          <Link 
-            to="/contacto" 
-            className="inline-block bg-white text-food font-bold py-3 px-8 rounded-md shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
-          >
-            Realiza tu consulta
-          </Link>
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div className="text-center md:text-left text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Somos su socio estratégico en la región
+              </h2>
+              <Link 
+                to="/contacto" 
+                className="inline-block bg-white text-food font-bold py-3 px-8 rounded-md shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              >
+                Realiza tu consulta
+              </Link>
+            </div>
+            <div className="flex justify-center">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&q=80" 
+                  alt="Menestras y legumbres" 
+                  className="w-full h-auto object-cover rounded-lg"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

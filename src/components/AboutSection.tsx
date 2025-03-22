@@ -75,8 +75,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
     >
       <div className={cn(
         "grid grid-cols-1 gap-12",
-        image ? "md:grid-cols-2" : "",
-        reverse ? "md:flex-row-reverse" : ""
+        image ? "md:grid-cols-2" : ""
       )}>
         <div 
           ref={textRef}
