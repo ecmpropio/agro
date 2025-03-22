@@ -1,6 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import TestimonialCard from './TestimonialCard';
+import { 
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from "@/components/ui/carousel";
 
 interface Testimonial {
   id: number;
@@ -35,6 +42,22 @@ const testimonials: Testimonial[] = [
     position: "CEO",
     company: "Premium Food Solutions",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+  },
+  {
+    id: 4,
+    quote: "Hemos encontrado en American Trading Foods un aliado estratégico que entiende nuestras necesidades y cumple con los más altos estándares de calidad.",
+    author: "Ana Martínez",
+    position: "Directora de Operaciones",
+    company: "International Food Group",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
+  },
+  {
+    id: 5,
+    quote: "La atención personalizada y la capacidad de American Trading Foods para adaptarse a nuestros requerimientos específicos los distingue de otros proveedores en el mercado.",
+    author: "Roberto Sánchez",
+    position: "Gerente General",
+    company: "Global Markets",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80"
   }
 ];
 
@@ -59,18 +82,32 @@ const TestimonialsSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={testimonial.id}
-              quote={testimonial.quote}
-              author={testimonial.author}
-              position={testimonial.position}
-              company={testimonial.company}
-              image={testimonial.image}
-              delay={index * 150}
-            />
-          ))}
+        <div className="relative px-4 sm:px-12 md:px-16 lg:px-24">
+          <Carousel className="w-full max-w-5xl mx-auto" 
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3 h-full">
+                  <div className="p-1 h-full">
+                    <TestimonialCard
+                      quote={testimonial.quote}
+                      author={testimonial.author}
+                      position={testimonial.position}
+                      company={testimonial.company}
+                      image={testimonial.image}
+                      delay={index * 150}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="lg:-left-1" />
+            <CarouselNext className="lg:-right-1" />
+          </Carousel>
         </div>
         
         <div className="flex justify-center mt-8">
