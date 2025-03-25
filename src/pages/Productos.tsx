@@ -14,7 +14,7 @@ const Productos = () => {
 
   const categories = [
     { id: 'all', name: 'Todos' },
-    { id: 'carnes', name: 'Carnes & Pescados' },
+    { id: 'legumbres', name: 'Legumbres' },
     { id: 'lacteos', name: 'Lácteos' },
     { id: 'frutos', name: 'Frutos Secos' },
     { id: 'vinos', name: 'Vinos' },
@@ -24,87 +24,87 @@ const Productos = () => {
   const products = [
     { 
       id: 1, 
-      category: 'carnes', 
-      name: 'Carne de res premium', 
-      description: 'Carne de res de alta calidad, criada en pasturas naturales, sin hormonas añadidas.',
-      image: '/lovable-uploads/da725f74-152f-4e7f-b2fc-6d2fff840966.png'
+      category: 'legumbres', 
+      name: 'Frijol Castilla', 
+      description: 'Sin conservadores ni aditivos, este frijol es un producto completamente natural, ideal para quienes buscan alimentos saludables y nutritivos.',
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 2, 
-      category: 'carnes', 
-      name: 'Cordero patagónico', 
-      description: 'Cordero criado en las extensas praderas de la Patagonia, con sabor único y textura excepcional.',
-      image: '/lovable-uploads/da725f74-152f-4e7f-b2fc-6d2fff840966.png'
+      category: 'legumbres', 
+      name: 'Frijol de Palo', 
+      description: 'Es una semilla saludable que aporta proteínas y aminoácidos. Es una fuente rica en proteínas',
+      image: '/lovable-uploads/frijol-de-palo.jpeg'
     },
     { 
       id: 3, 
-      category: 'carnes', 
-      name: 'Pescados frescos', 
-      description: 'Variedad de pescados capturados siguiendo prácticas sostenibles, procesados y empacados el mismo día.',
-      image: '/lovable-uploads/da725f74-152f-4e7f-b2fc-6d2fff840966.png'
+      category: 'legumbres', 
+      name: 'Quinua', 
+      description: 'Es una semilla andina, rica en proteínas, que se considera un superalimento. Contiene magnesio, calcio y oligoelementos',
+      image: 'https://plus.unsplash.com/premium_photo-1671130295828-efd9019faee0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     { 
       id: 4, 
       category: 'lacteos', 
       name: 'Leche en polvo', 
       description: 'Leche en polvo de alta calidad, producida con leche de vacas alimentadas con pastos naturales.',
-      image: '/lovable-uploads/eb2e0f2f-84c5-4d65-9f3c-c6d3ee151ce4.png'
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 5, 
       category: 'lacteos', 
       name: 'Quesos artesanales', 
       description: 'Selección de quesos artesanales elaborados con métodos tradicionales y leche de la más alta calidad.',
-      image: '/lovable-uploads/eb2e0f2f-84c5-4d65-9f3c-c6d3ee151ce4.png'
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 6, 
       category: 'frutos', 
       name: 'Almendras', 
       description: 'Almendras de alta calidad, disponibles enteras, fileteadas o en harina.',
-      image: '/lovable-uploads/c7b04279-383f-4952-863f-bd8026d2a1b7.png'
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 7, 
       category: 'frutos', 
       name: 'Nueces', 
       description: 'Nueces seleccionadas a mano, con sabor excepcional y alto valor nutricional.',
-      image: '/lovable-uploads/c7b04279-383f-4952-863f-bd8026d2a1b7.png'
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 8, 
       category: 'vinos', 
       name: 'Vinos tintos premium', 
       description: 'Selección de vinos tintos de bodegas con tradición y prestigio internacional.',
-      image: '/lovable-uploads/086921e4-39c6-4248-8807-c48db7603aa9.png'
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 9, 
       category: 'vinos', 
       name: 'Vinos blancos', 
       description: 'Vinos blancos frescos y aromáticos, perfectos para acompañar mariscos y platos ligeros.',
-      image: '/lovable-uploads/086921e4-39c6-4248-8807-c48db7603aa9.png'
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 10, 
       category: 'otros', 
       name: 'Aceite de oliva extra virgen', 
       description: 'Aceite de oliva de primera presión en frío, con baja acidez y sabor intenso.',
-      image: '/lovable-uploads/ea107a0a-7af1-4a5c-b607-c0db34fc93c0.png'
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 11, 
       category: 'otros', 
       name: 'Café de altura', 
       description: 'Café cultivado en altitudes óptimas, con notas aromáticas únicas y procesamiento cuidadoso.',
-      image: '/lovable-uploads/ea107a0a-7af1-4a5c-b607-c0db34fc93c0.png'
+      image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 12, 
       category: 'otros', 
       name: 'Miel orgánica', 
       description: 'Miel pura certificada orgánica, producida en ecosistemas naturales protegidos.',
-      image: '/lovable-uploads/ea107a0a-7af1-4a5c-b607-c0db34fc93c0.png'
+      image: '/lovable-uploads/frijol.jpg'
     }
   ];
 
@@ -116,7 +116,7 @@ const Productos = () => {
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&q=80"
+        backgroundImage="/lovable-uploads/productos.jpeg"
         title="Nuestros Productos"
         subtitle="Una selección de alimentos de alta calidad para mercados internacionales"
       />
@@ -134,6 +134,8 @@ const Productos = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+           
+           
             <ProductCard 
               icon={<Beef size={48} />}
               title="Carnes & Pescados"

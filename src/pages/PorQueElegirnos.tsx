@@ -13,9 +13,9 @@ const PorQueElegirnos = () => {
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?auto=format&fit=crop&q=80"
+        backgroundImage="/lovable-uploads/porque.jpg"
         title="Por qué elegirnos"
-        subtitle="Descubra las ventajas de trabajar con American Trading Foods"
+        subtitle="Descubra las ventajas de trabajar con AgroProcesos del Norte "
       />
 
       {/* Trust Section */}
@@ -23,8 +23,8 @@ const PorQueElegirnos = () => {
         <AboutSection 
           subtitle="POR QUÉ ELEGIRNOS"
           title="Confianza, sostenibilidad y compromiso en cada operación"
-          description="El equipo de American Trading Foods está compuesto por profesionales con amplia experiencia en logística, trading de alimentos y materias primas. Entendemos las complejidades del comercio internacional y ofrecemos soluciones eficientes para nuestros clientes."
-          image="/lovable-uploads/c7b04279-383f-4952-863f-bd8026d2a1b7.png"
+          description="Nos especializamos en el acopio, compra, venta y procesamiento de menestras como frijol Castilla, pallar iqueño, pallar baby, zarandaja, frijol palo, quinua y otras variedades de los valles del norte y todo el Perú. "
+          image="/lovable-uploads/planta-agro.jpg"
         />
       </section>
 
@@ -33,8 +33,9 @@ const PorQueElegirnos = () => {
         <AboutSection 
           subtitle="NUESTRO ENFOQUE"
           title="Comercialización y logística"
-          description="La trazabilidad para logística y cadena de suministro sigue los mismos principios que la Certificación Orgánica. Todo el proceso, desde que se adquiere el producto en origen hasta la entrega final se encuentra debidamente documentado a cada paso, supervisando a cada interlocutor que participe del proceso para asegurar la correcta trazabilidad en cada paso."
-          image="/lovable-uploads/086921e4-39c6-4248-8807-c48db7603aa9.png"
+          description="Somos una empresa con trayectoria en el sector, comprometida con la calidad y la confiabilidad en cada uno de nuestros productos.
+Contamos con una planta propia de procesamiento equipada con tecnología eficiente y certificación SENASA, garantizando el cumplimiento de los estándares de calidad y sanidad exigidos a nivel nacional e internacional. "
+          image="/lovable-uploads/trayectoria.jpg"
           reverse={true}
         />
       </section>
@@ -44,8 +45,8 @@ const PorQueElegirnos = () => {
         <AboutSection 
           subtitle="GARANTÍA DE CALIDAD"
           title="Certificaciones y estándares de calidad internacional"
-          description="Trabajamos con los más altos estándares en materia de certificaciones internacionales. Esto nos permite garantizar que todos nuestros productos cumplen con las normativas más exigentes de cada mercado de destino."
-          image="/lovable-uploads/ea107a0a-7af1-4a5c-b607-c0db34fc93c0.png"
+          description="Nos enfocamos en brindar soluciones seguras y competitivas, conectando a agricultores con mercados locales e internacionales."
+          image="/lovable-uploads/viajes.jpg"
         />
       </section>
 

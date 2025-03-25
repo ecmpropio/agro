@@ -15,7 +15,7 @@ const Certificaciones = () => {
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1466721591366-2d5fba72006d?auto=format&fit=crop&q=80"
+        backgroundImage="lovable-uploads/certificaciones.jpg"
         title="Certificaciones"
         subtitle="Comprometidos con la excelencia y seguridad en cada producto"
       />

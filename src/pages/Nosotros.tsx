@@ -13,7 +13,7 @@ const Nosotros = () => {
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1493962853295-0fd70327578a?auto=format&fit=crop&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1543418219-44e30b057fea?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         title="Nosotros"
         subtitle="Conoce quiénes somos y nuestra trayectoria"
       />
@@ -23,8 +23,9 @@ const Nosotros = () => {
         <AboutSection 
           subtitle="NUESTRA HISTORIA"
           title="Una trayectoria de excelencia y compromiso"
-          description="Fundada en 2009, American Trading Foods nació con la visión de convertirse en un puente entre los productores sudamericanos de alta calidad y los mercados internacionales más exigentes. A lo largo de nuestra trayectoria, hemos construido relaciones sólidas con productores comprometidos con la excelencia y la sostenibilidad."
-          image="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&q=80"
+          description="Nuestra historia es un testimonio de esfuerzo y determinación. En los años 1990, iniciamos en el comercio de granos, aprendiendo desde la base del negocio. Luego, en el año 2000, dimos el paso hacia la independencia, comenzando con una modesta operación de venta en el mercado local. Fueron tiempos desafiantes, en los que la perseverancia y el aprendizaje constante nos permitieron crecer y consolidarnos en el rubro.
+A medida que nuestra experiencia y clientela crecían, nos expandimos a la comercialización con plantas procesadoras y, posteriormente, incursionamos en el mercado de exportación. Así nació Agro y Procesos del Norte EIRL, una empresa que hoy combina tradición, conocimiento y visión empresarial para ofrecer productos confiables y de alta calidad."
+          image="/lovable-uploads/nosotros-planta.jpeg"
         />
       </section>
 

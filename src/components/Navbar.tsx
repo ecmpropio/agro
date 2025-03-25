@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="font-bold text-xl flex items-center">
             <Globe className="h-6 w-6 mr-2 text-food" />
             <span className="text-navy-dark">
-              American <span className="text-food">Trading Foods</span>
+              Agro Procesos <span className="text-food">del Norte</span>
             </span>
           </div>
         </Link>

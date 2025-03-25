@@ -13,7 +13,7 @@ const Contacto = () => {
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1493962853295-0fd70327578a?auto=format&fit=crop&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1674384696285-a4239c8609b7?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         title="Contacto"
         subtitle="Estamos aquí para ayudarle con todas sus necesidades de exportación"
       />
@@ -37,7 +37,7 @@ const Contacto = () => {
                     <h3 className="font-semibold mb-1">Dirección</h3>
                     <p className="text-gray-600">
                       Av. Principal 1234, Piso 5<br />
-                      Santiago, Chile
+                      Chulucanas, Piura, Perú.
                     </p>
                   </div>
                 </div>
@@ -48,7 +48,7 @@ const Contacto = () => {
                     <h3 className="font-semibold mb-1">Teléfono</h3>
                     <p className="text-gray-600">
                       <a href="tel:+56212345678" className="hover:text-food transition-colors">
-                        +562 1234 5678
+                        +51 989-933-433
                       </a>
                     </p>
                   </div>
@@ -60,7 +60,7 @@ const Contacto = () => {
                     <h3 className="font-semibold mb-1">Email</h3>
                     <p className="text-gray-600">
                       <a href="mailto:info@americantradingfoods.com" className="hover:text-food transition-colors">
-                        info@americantradingfoods.com
+                      agroprocesosdelnorte@gmail.com
                       </a>
                     </p>
                   </div>
@@ -78,23 +78,7 @@ const Contacto = () => {
                 </div>
               </div>
               
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-bold text-lg mb-3">Oficinas internacionales</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold">Brasil</h4>
-                    <p className="text-gray-600">São Paulo, Brasil</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Argentina</h4>
-                    <p className="text-gray-600">Buenos Aires, Argentina</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Estados Unidos</h4>
-                    <p className="text-gray-600">Miami, FL, USA</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
             
             <div className="bg-gray-50 p-8 rounded-lg">

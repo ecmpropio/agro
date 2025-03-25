@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-6">
               <Globe className="h-6 w-6 text-food" />
               <span className="font-bold text-xl">
-                American <span className="text-food">Trading Foods</span>
+                Agro Procesos <span className="text-food">del Norte</span>
               </span>
             </div>
             <p className="text-gray-600 mb-6 max-w-md">
@@ -80,19 +80,19 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-food mr-3 mt-0.5" />
                 <span className="text-gray-600">
                   Av. Principal 1234, Piso 5<br />
-                  Santiago, Chile
+                  Chulucanas,Piura, Perú.
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-food mr-3" />
                 <a href="tel:+56212345678" className="text-gray-600 hover:text-food transition-colors">
-                  +562 1234 5678
+                  +51 989-933-433
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-food mr-3" />
                 <a href="mailto:info@americantradingfoods.com" className="text-gray-600 hover:text-food transition-colors">
-                  info@americantradingfoods.com
+                  agroprocesosdelnorte@gmail.com
                 </a>
               </li>
             </ul>
@@ -101,7 +101,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-200 mt-12 pt-8">
           <p className="text-center text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} American Trading Foods. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} Agro Procesos del Norte. Todos los derechos reservados.
           </p>
         </div>
       </div>
