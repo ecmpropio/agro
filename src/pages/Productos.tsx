@@ -101,7 +101,7 @@ const Productos = () => {
       id: 12, 
       category: 'legumbres', 
       name: 'Pallar Grande', 
-      description: 'Miel pura certificada orgánica, producida en ecosistemas naturales protegidos.',
+      description: 'Es un grano grande y maduro de la especie Phaseolus lunatus L. que se caracteriza por ser blanco y tener estrías que irradian del hilo. ',
       image: '/lovable-uploads/pallargrande.jpg'
     }
   ];
