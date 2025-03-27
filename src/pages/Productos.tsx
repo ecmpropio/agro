@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '@/components/Hero';
 import ProductCard from '@/components/ProductCard';
-import { Beef, Fish, Apple, Wheat, Grape, Coffee } from 'lucide-react';
+import { Beef, Fish, Bean, Sprout, Wheat, Grape, Coffee } from 'lucide-react';
 
 const Productos = () => {
   useEffect(() => {
@@ -15,9 +15,7 @@ const Productos = () => {
   const categories = [
     { id: 'all', name: 'Todos' },
     { id: 'legumbres', name: 'Legumbres' },
-    { id: 'lacteos', name: 'Lácteos' },
-    { id: 'frutos', name: 'Frutos Secos' },
-    { id: 'vinos', name: 'Vinos' },
+    { id: 'semillas', name: 'Semillas' },
     { id: 'otros', name: 'Otros Productos' }
   ];
 
@@ -45,66 +43,66 @@ const Productos = () => {
     },
     { 
       id: 4, 
-      category: 'lacteos', 
-      name: 'Leche en polvo', 
-      description: 'Leche en polvo de alta calidad, producida con leche de vacas alimentadas con pastos naturales.',
-      image: '/lovable-uploads/frijol.jpg'
+      category: 'semillas', 
+      name: 'Quinua', 
+      description: 'Es una semilla andina, rica en proteínas, que se considera un superalimento. Contiene magnesio, calcio y oligoelementos',
+      image: 'https://plus.unsplash.com/premium_photo-1671130295828-efd9019faee0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     { 
       id: 5, 
-      category: 'lacteos', 
-      name: 'Quesos artesanales', 
-      description: 'Selección de quesos artesanales elaborados con métodos tradicionales y leche de la más alta calidad.',
-      image: '/lovable-uploads/frijol.jpg'
+      category: 'semillas', 
+      name: 'Frijol Panamito', 
+      description: 'Es un tipo de frijol pequeño, de color blanco, con forma ovalada y textura suave. Es rico en proteínas, carbohidratos, fibra, minerales y vitaminas',
+      image: '/lovable-uploads/frijolpanamito.webp'
     },
     { 
       id: 6, 
-      category: 'frutos', 
-      name: 'Almendras', 
+      category: 'legumbres', 
+      name: 'Pallar Bebe', 
       description: 'Almendras de alta calidad, disponibles enteras, fileteadas o en harina.',
-      image: '/lovable-uploads/frijol.jpg'
+      image: '/lovable-uploads/pallarbebe.png'
     },
     { 
       id: 7, 
-      category: 'frutos', 
+      category: 'legumbres', 
       name: 'Nueces', 
       description: 'Nueces seleccionadas a mano, con sabor excepcional y alto valor nutricional.',
       image: '/lovable-uploads/frijol.jpg'
     },
     { 
       id: 8, 
-      category: 'vinos', 
-      name: 'Vinos tintos premium', 
-      description: 'Selección de vinos tintos de bodegas con tradición y prestigio internacional.',
-      image: '/lovable-uploads/frijol.jpg'
+      category: 'semillas', 
+      name: 'Kiwicha', 
+      description: 'Es un pseudocereal originario de Sudamérica. Es una planta herbácea que produce semillas ricas en proteínas, vitaminas, minerales y fibra.',
+      image: '/lovable-uploads/kiwicha.webp'
     },
     { 
       id: 9, 
-      category: 'vinos', 
-      name: 'Vinos blancos', 
-      description: 'Vinos blancos frescos y aromáticos, perfectos para acompañar mariscos y platos ligeros.',
-      image: '/lovable-uploads/frijol.jpg'
+      category: 'legumbres', 
+      name: 'Frijol Canario', 
+      description: 'Es una legumbre de color amarillo, de forma ovalada y alargada. Es una gran fuente de proteínas, carbohidratos, fibra, vitaminas y minerales. ',
+      image: '/lovable-uploads/frijocanario.webp'
     },
     { 
       id: 10, 
       category: 'otros', 
-      name: 'Aceite de oliva extra virgen', 
-      description: 'Aceite de oliva de primera presión en frío, con baja acidez y sabor intenso.',
-      image: '/lovable-uploads/frijol.jpg'
+      name: 'Arroz', 
+      description: 'El arroz es un cereal comestible rico en carbohidratos y almidón. Es un cereal básico para una dieta sana y equilibrada. ',
+      image: '/lovable-uploads/arroz.webp'
     },
     { 
       id: 11, 
-      category: 'otros', 
-      name: 'Café de altura', 
-      description: 'Café cultivado en altitudes óptimas, con notas aromáticas únicas y procesamiento cuidadoso.',
-      image: '/lovable-uploads/frijol.jpg'
+      category: 'legumbres', 
+      name: 'Frijol Zarandaja', 
+      description: 'Es una legumbre de forma elipsoidal, de color blanco cremoso y textura suave. Es rico en proteínas, carbohidratos, minerales, vitamina B, niacina, riboflavina y tiamina. ',
+      image: '/lovable-uploads/zarandaja.webp'
     },
     { 
       id: 12, 
-      category: 'otros', 
-      name: 'Miel orgánica', 
+      category: 'legumbres', 
+      name: 'Pallar Grande', 
       description: 'Miel pura certificada orgánica, producida en ecosistemas naturales protegidos.',
-      image: '/lovable-uploads/frijol.jpg'
+      image: '/lovable-uploads/pallargrande.jpg'
     }
   ];
 
@@ -133,33 +131,28 @@ const Productos = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
            
            
             <ProductCard 
-              icon={<Beef size={48} />}
-              title="Carnes & Pescados"
-              description="Carne de res, cordero y productos pesqueros frescos, cumpliendo normas internacionales."
+              icon={<Wheat size={48} />}
+              title="Semillas"
+              description="Semillas Andinas de exportación como la quinua, la kiwicha entre otros. "
               delay={0}
             />
             <ProductCard 
-              icon={<Wheat size={48} />}
-              title="Lácteos"
-              description="Leche en polvo y productos lácteos certificados, frescos y confiables."
+              icon={<Bean size={48} />}
+              title="Legumbres"
+              description="Frijol castilla, frijol panamito, frijo de palo entre otras legumbres."
               delay={150}
             />
             <ProductCard 
-              icon={<Apple size={48} />}
-              title="Frutos Secos"
+              icon={<Sprout size={48} />}
+              title="Otros productos"
               description="Almendras, nueces, pistachos en sus distintas presentaciones."
               delay={300}
             />
-            <ProductCard 
-              icon={<Grape size={48} />}
-              title="Vinos"
-              description="Vinos premium, garantizando calidad y autenticidad."
-              delay={450}
-            />
+      
           </div>
         </div>
       </section>
@@ -238,11 +231,11 @@ const Productos = () => {
                   Solicitar productos personalizados
                 </Link>
               </div>
-              <div className="md:w-1/3 mt-6 md:mt-0">
+              <div className="md:w-1/3 mt-6 md:mt-0 max-w-[400px] hover:scale-120 transition duration-100 ">
                 <img 
-                  src="/lovable-uploads/c7b04279-383f-4952-863f-bd8026d2a1b7.png" 
+                  src="/lovable-uploads/empresaagro.png" 
                   alt="Productos personalizados" 
-                  className="rounded-lg shadow-md"
+                  className="rounded-xl  shadow-md w-[400px] h-[500px] "
                 />
               </div>
             </div>
