@@ -23,10 +23,28 @@ const Certificaciones = () => {
       {/* Main Content */}
       <section className="bg-white">
         <AboutSection 
-          subtitle="CERTIFICACIONES"
+          subtitle="Servicio Maquila"
+          title="Ofrecemos el servicio de Maquila de productos "
+          description="Tenemos años de experiencia ofreciendo el servicio de maquila para los empresarios que desean exportar productos agrícolas."
+          image="/lovable-uploads/serviciomaquila.jpg"
+        />
+      </section>
+
+      <section className="bg-white">
+        <AboutSection 
+          subtitle="Servicio Maquila"
           title="Comprometidos con la excelencia y seguridad"
-          description="Nuestras certificaciones garantizan que todos los productos cumplen con los más altos estándares internacionales de calidad, seguridad alimentaria y bienestar animal, asegurando una exportación responsable y confiable."
-          image="/lovable-uploads/eb2e0f2f-84c5-4d65-9f3c-c6d3ee151ce4.png"
+          description="Brindamos el servicio de limpieza y procesamiento del producto y trabajamos con diversas maquinarias automatizadas cumpliendo cada una de ellas una función específica."
+          image="/lovable-uploads/serviciomaquila02.jpg"
+        />
+      </section>
+
+      <section className="bg-white">
+        <AboutSection 
+          subtitle="Limpieza y Almacenaje"
+          title="Comprometidos con la excelencia y seguridad"
+          description="Tenemos un control organizado y codificado del producto para la distribución y entrega oportuna, dando eficiencia a su trazabilidad."
+          image="/lovable-uploads/serviciomaquila03.jpg"
         />
       </section>
 
@@ -41,6 +59,8 @@ const Certificaciones = () => {
               Garantizamos la calidad y seguridad de nuestros productos
             </p>
           </div>
+
+          
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             <CertificationBadge name="BRC FOOD SAFETY" delay={0} />
@@ -60,7 +80,7 @@ const Certificaciones = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Nuestros estándares de calidad
+              Servicio de Maquila
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Principios que guían nuestros procesos de exportación

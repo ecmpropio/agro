@@ -45,7 +45,7 @@ const Navbar = () => {
           <NavLink to="/nosotros">Nosotros</NavLink>
           <NavLink to="/por-que-elegirnos">Por qué elegirnos</NavLink>
           <NavLink to="/productos">Productos</NavLink>
-          <NavLink to="/certificaciones">Certificaciones</NavLink>
+          <NavLink to="/certificaciones">Certificaciones-Maquila</NavLink>
           <NavLink to="/contacto">Contacto</NavLink>
         </nav>
 
